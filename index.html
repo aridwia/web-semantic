@@ -1,162 +1,374 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <title>index</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Web Semantik</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/src/style.css">
+
   </head>
+
   <body>
+
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Dunia Kuliner Bandung</a>
+          <a class="navbar-brand" href="#">
+            <!-- <img alt="Brand" src="/src/img/ADA.png" height="30" width="30"> -->
+            <p><b>FoxKus</b></p>
+          </a>
         </div>
-
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Jual Beli</a></li>
           </ul>
 
-          <ul class="nav navbar-nav navbar-right">
-            <form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Cari di sini">
+            </div>
+            <button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
+          </form>
+
+          <div class="col-md-7"></div>
+
+          <form class="navbar-form navbar-left">
+            <a href="#myModal" data-toggle="modal" data-target="#myModal">Masuk</a>
+          </form>
+          <!-- Modal -->
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal">
+                    <fieldset>
+                      <div class="form-group">
+                        <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                          <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                        <div class="col-lg-10">
+                          <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Checkbox
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                          <button type="reset" class="btn btn-default">Cancel</button>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
-              <button type="submit" class="btn btn-default">Search</button>
-            </form>
-          </ul>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </nav>
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1>.</h1>
-        <p></p>
-      </div>
-      <div class="row">
-        <div class="col-md-9">
-          <div class="panel panel-default">
-            <div class="panel-heading"><h2>Crown Cone Pizza</h2></div>
-            <div class="panel-body">
-              <div class="container">
-                <img src="/src/img/cone.jpg" width="600px" height="600px" align="midle" alt="">
-              </div><br>
-              <h4 class="muted">
-                Pertama kali liat cone pizza sebenernya di instagram 9gags, ternyata ada yg jual juga di Bandung. Dough pizza nya dibentuk seperti cone ice cream, sedangkan topping pizza nya di dalam cone kemudian ditutup dengan dengan keju melimpah. Enaak, kami suka banget cone pizza dari Crown ini.
+                                    <!--              isi html nya                 -->
 
-                Toppingnya royal banget deh asli, sampai cone bagian terbawah masih tetep enak makannya karena toppingnya banyak 😀 makannya juga praktis seperti makan ie cream.
-              </p>
-            </div>
-          </div>
-          <div class="panel panel-default">
-            <div class="panel-heading"><h2>Crown Cone Pizza</h2></div>
-            <div class="panel-body">
-              <div class="container">
-                <img src="/src/img/home2.jpg" width="600px" height="600px" align="midle" alt="">
-              </div><br>
-              <h4 class="muted">
-                Tadaaa… udah pernah nyoba belum pizza yang dough nya berwarna hitam? 😉 Eatalia resto ini salah satu tempat makan pizza terenak di Bandung menurut kami. Pizza nya homemade, warna hitam ini diambil dari charcoal yang baik untuk pencernaan.
-              </h4>
-            </div>
-          </div>
-          <form class="form-horizontal col col-md-9">
-            <fieldset>
-              <legend>Leave Comment</legend>
-              <div class="form-group">
-                <label for="inputEmail" class="col-lg-2 control-label">Name</label>
-                <div class="col-lg-10">
-                  <input type="text" class="form-control" id="inputEmail" placeholder="Name">
+    <div class="container">
+     <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-8">
+
+            <p><img src="src/img/hotthread.png" alt="hot thread image" > Hot Thread</p>
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="src/img/hot_thread1.jpg" width="750" height="400" alt="Card hot thread 1">
+              <div class="card-img-overlay">
+                <h4 class="card-title">Tega Untuk Makan Hidangan Tentang Sailor Moon di Cafe Ini??</h4>
+                <p class="card-text">Mengkonsumsi burger sebagai pengganti menu makanan berat memang sudah biasa, tapi </p>
+                <p class="card-text"><a href="#">selengkapnya</a></p>
+              </div>
+            </div><br>
+
+            <div class= 'row'>
+              <div class="col-md-6">
+                <div class="card card text-center">
+                 <div class="card-body">
+                   <img class="card-img-top" src="src/img/hot_thread4.jpg" alt="Card hot thread 4" width="250" height="150">
+                   <p class="card-text"><a href="#">Sulitnya bernafas di jakarta</a></p>
+                 </div>
+               </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card card text-center">
+                   <div class="card-body">
+                     <img class="card-img-top" src="src/img/hot_thread2.jpg" alt="Card hot thread 2" width="125" height="75">
+                     <p class="card-text"><a href="#">10 Makanan Khas Banyuwangi yang Wajib Dicoba</a></p>
+                   </div>
+                 </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card card text-center">
+                   <div class="card-body">
+                     <img class="card-img-top" src="src/img/hot_thread3.jpg" alt="Card hot thread 3" width="125" height="75">
+                     <p class="card-text"><a href="#">Vampir Dog, Binatang Misterius yang Diduga Penghisap Darah </a></p>
+                   </div>
+                 </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="inputPassword" class="col-lg-2 control-label">Email</label>
-                <div class="col-lg-10">
-                  <input type="password" class="form-control" id="inputPassword" placeholder="Email">
-                  <div class="checkbox">
+
+            </div><br>
+
+            <p><img src="src/img/logofjb.png" alt="fjb image" > Jual Beli</p>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="src/img/jb1.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Xiaomi Xiaoyi Smart CCTV</h4>
+                    <p class="card-text">Xiaomi mengklaim komponen mesin lebih baru dan lebih bagus di versi terbaru ini sehingga tidak cepat panas dan awet.Xiaoyi ini dapat ditempatkan dimana saja,</p>
+                    <a href="#">Selengkapnya</a>
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="textArea" class="col-lg-2 control-label">Comment</label>
-                <div class="col-lg-10">
-                  <textarea class="form-control" rows="3" id="textArea"></textarea>
-                  <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="src/img/jb3.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Xiaomi Xiaoyi Smart CCTV Nightvisi</h4>
+                    <p class="card-text">Xiaomi mengklaim komponen mesin lebih baru dan lebih bagus di versi terbaru ini sehingga tidak cepat panas dan awet.Xiaoyi ini dapat ditempatkan dimana saja,</p>
+                    <a href="#">Selengkapnya</a>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <div class="col-lg-10 col-lg-offset-2">
-                  <button type="reset" class="btn btn-default">Cancel</button>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="src/img/jb2.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Xiaomi Xiaoyi Yi Dome IP CCTV 360</h4>
+                    <p class="card-text">Xiaomi mengklaim komponen mesin lebih baru dan lebih bagus di versi terbaru ini sehingga tidak cepat panas dan awet.Xiaoyi ini dapat ditempatkan dimana saja,</p>
+                    <a href="#">Selengkapnya</a>
+                  </div>
                 </div>
               </div>
-            </fieldset>
-          </form>
-        </div>
-      <div class="col-md-3">
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="src/img/aboutas.jpg" alt="Card image cap" width="250px">
-          <div class="card-block">
-            <h4 class="card-title">About as</h4>
-            <p class="card-text">Victor & Ranie, food blogger based on Bandung. We love food, Photography and Videography. Kindly open About Us page for more information :)</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div><br>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="src/img/card2.jpg" alt="Card image cap" width="250px">
-          <div class="card-block">
-            <h4 class="card-title">Noodle Ice Cream di Pepo Appetite</h4>
-            <p class="card-text">Pepo Appetite, sebuah tempat ngedessert baru di daerah Dipatiukur. Tempatnya mungil dan terletak di lantai 2 tapi didesain dengan  cantik. Ada satu menu dessert yang unik disini namanya Noodle Ice Cream. Pertama kali denger sih kami kira seperti kebanyakan ‘noodle ice’ lain yang terdiri dari jelly berbentuk mie ditemani jelly berbentuk telur. Ternyata, noodle disini benar-benar mie yang dibikin menjadi kriuk!.</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div><br>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="src/img/card3.jpg" alt="Card image cap" width="250px">
-          <div class="card-block">
-            <h4 class="card-title">Melonkolis di Kedai Update</h4>
-            <p class="card-text">Setelah mangkok kelapa booming di kota Bandung, Kedai Update mengeluarkan menu mangkok melon sebagai pengganti kelapa. Melonkolis namanya. Terdiri dari setengah batok melon, diisi dengan ice cream dan puding. Kalau mau lebih lengkap bisa pake topping seperti oreo, kitkat greentea, pocky, dll. Selain menu Melonkolis disina juga ada indomie, nasi goreng, dan susu murni yang harganya mahasiswa banget..</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div><br>
-        </div>
-        <div class="card" style="width: 20rem;">
-          <img class="card-img-top" src="src/img/card5.jpg" alt="Card image cap" width="250px">
-          <div class="card-block">
-            <h4 class="card-title">Bread Cone di Hello Dessert</h4>
-            <p class="card-text">Sebenarnya Hello Dessert bukan yang pertama kali mengeluarkan menu Bread Cone, tapi yang tempatnya nggak pindah-pindah dan konsisten berjualan memang Hello Dessert 🙂 Jadi, kalo sempet lihat menu bread cone ini hits di instagram dan tertarik pengen beli bisa datang ke Hello Dessert. Satu porsinya terdiri dari bread cone, ice cream, dan 2 macam topping. Disini juga ada dessert bowl yang bisa pilih sendiri isinya apa.</p>
-            <a href="#" class="btn btn-primary">More</a>
-          </div>
-        </div><br>
-      </div>
-  </div>
+            </div>
 
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-heading"></div>
-    <div class="panel-body col col-md-6">Made by Thomas Park. Contact him at thomas@bootswatch.com.
-      Based on Bootstrap. Icons from Font Awesome. Web fonts from Google.<img src="src/img/footer.jpg" align="right" alt="" width="100px">
-    <!-- <div class="panel-footer"></div> -->
-    </div>
-  </div>
-</div>
-</body>
-</div>
+          </div>
+          <div class="col-md-4">
+            <!-- <div class="container"> -->
+              <p><img src="src/img/hotreviews.png" alt="hot review image"> Hot Review</p>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img src="src/img/hotreviews2.png" alt="Lights" width="180" height="120">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#">
+                    <img src="src/img/hotreviews1.png" alt="Nature" width="180" height="120">
+                  </a>
+                </div>
+              </div><br>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#">
+                    <img src="src/img/hotreviews3.png" alt="Lights" width="180" height="120">
+                  </a>
+                </div>
+                <div class="col-md-6">
+                  <a href="#">
+                    <img src="src/img/hotreviews4.png.jpg" alt="Nature" width="180" height="120">
+                  </a>
+                </div>
+              </div><br><br>
+
+              <p><img src="src/img/hotreviews.png" alt="hot review image"> Foxkus Store</p>
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Member</a></li>
+                    <li class=""><a href="#profile" data-toggle="tab" aria-expanded="true">e-pulsa</a></li>
+                  </ul>
+                  <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="home">
+                      <img src="src/img/logtab1.jpg" alt="logo tab" width="360">
+                      <br>
+                      <div class="form-group">
+                        <label class="control-label">Paket</label>
+                        <input class="form-control" id="paket" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label">Userid</label>
+                        <input class="form-control" id="userid" type="text">
+                      </div>
+                      <button type="button" class="" name="button">Premium Service</button>
+                    </div>
+                    <div class="tab-pane fade" id="profile">
+                      <img src="src/img/logtab2.jpg" alt="logo tab" width="360">
+                      <br>
+                      <div class="form-group">
+                        <label class="control-label">Jenis pembelian</label>
+                        <input class="form-control" id="jenispembelian" type="text">
+                        <label class="control-label">No telp</label>
+                        <input class="form-control" id="notelp" type="text">
+                        <label class="control-label">Nominal</label>
+                        <input class="form-control" id="nominal" type="text">
+                      </div>
+                      <button type="button" class="" name="button">Beli coy</button>
+                    </div>
+                  </div>
+                </div>
+              </div><br><br>
+
+
+              <p><img src="src/img/logonews.png" alt="hot review image"> News</p>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="src/img/news1.jpg" alt="news1" width="125">
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#"><p>Modus! Diketahui Ada Intel Masuk Gedung LBH, Acara </p></a>
+                      </div>
+                    </div><br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="src/img/news2.jpg" alt="news2" width="125">
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#"><p>Kontroversi Adegan Pencungkilan Mata di Film </p></a>
+                      </div>
+                    </div><br>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <img src="src/img/news3.png" alt="news2" width="125">
+                      </div>
+                      <div class="col-md-6">
+                        <a href="#">Bah! Diparkir di garasi rumah, mobil polisi hilang, </a>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+            <!-- </div>  -->
+                                           <!--tutup container -->
+
+          </div>
+        </div>
+     </div><!--  tutuup row -->
+   </div><br><br>
+     <footer>
+      <div class="footer" id="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                      <h3> FoxKus </h3>
+                      <ul>
+                          <li> <a href="#"> Pusat Bantuan </a> </li>
+                          <li> <a href="#"> Tentang Kami </a> </li>
+                          <li> <a href="#"> Beriklan di Foxkus </a> </li>
+                          <li> <a href="#"> Hubungi Kami </a> </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                      <h3> Navigation </h3>
+                      <ul>
+                          <li> <a href="#"> Forum </a> </li>
+                          <li> <a href="#"> Jual Beli </a> </li>
+                          <li> <a href="#"> Group </a> </li>
+                          <li> <a href="#"> Member </a> </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                      <h3> Jual </h3>
+                      <ul>
+                          <li> <a href="#"> Cara Jual </a> </li>
+                          <li> <a href="#"> Berjualan FAQ </a> </li>
+                          <li> <a href="#"> Kalkulasi Jasa </a> </li>
+                          <li> <a href="#"> Pengiriman </a> </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                      <h3> Beli </h3>
+                      <ul>
+                          <li> <a href="#"> Cara Membeli </a> </li>
+                          <li> <a href="#"> Pembelian FAQ </a> </li>
+                          <li> <a href="#"> Saldo FoxPay </a> </li>
+                          <li> <a href="#"> Resolution Center </a> </li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                      <h3> Kontak </h3>
+                      <ul>
+                          <li>
+                              <div class="input-append newsletter-box text-center">
+                                  <input type="text" class="full text-center" placeholder="Email ">
+                                  <button class="btn  bg-gray" type="button"> Kirim <i class="fa fa-long-arrow-right"> </i> </button>
+                              </div>
+                          </li>
+                      </ul>
+                      <ul class="social">
+                          <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                          <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                      </ul>
+                  </div>
+              </div>
+              <!--/.row-->
+          </div>
+          <!--/.container-->
+      </div>
+      <!--/.footer-->
+
+      <div class="footer-bottom">
+          <div class="container">
+              <p class="pull-left"> Copyright © Footer E-commerce Plugin 2014. All right reserved. </p>
+              <div class="pull-right">
+                  <ul class="nav nav-pills payments">
+                  	<li><i class="fa fa-cc-visa"></i></li>
+                      <li><i class="fa fa-cc-mastercard"></i></li>
+                      <li><i class="fa fa-cc-amex"></i></li>
+                      <li><i class="fa fa-cc-paypal"></i></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <!--/.footer-bottom-->
+  </footer>
+  </body>
 </html>
-<!-- <div class="list-group">
-  <a href="index.html" class="list-group-item active">
-    Home
-  </a>
-  <a href="kuliner.html" class="list-group-item">kuliner
-  </a>
-  <a href="#" class="list-group-item">Morbi leo risus
-  </a>
-</div> -->
